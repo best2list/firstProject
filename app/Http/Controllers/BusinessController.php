@@ -11,6 +11,11 @@ use function Sodium\crypto_box_publickey_from_secretkey;
 
 class BusinessController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $businesses = Business::all()->where('user_id',Auth::id());
