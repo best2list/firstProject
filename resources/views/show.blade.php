@@ -6,7 +6,7 @@
 
     <div class="media border-bottom mt-1">
         <div class="media-body">
-            <div class="bg-warning p-3 rounded shadow-sm">
+            <div class="alert-danger p-3 rounded shadow-sm">
                 {{ $business->title}}
             </div>
             <div class="bg-white  p-3 mt-2">
@@ -33,8 +33,8 @@
             <div class="mt-3 mb-3 rounded">
                 <iframe class="rounded" style="width: 100% ;" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
+
         </div>
     </div>
-            @auth
-            @endauth
+
 @endsection
